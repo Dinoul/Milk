@@ -1,0 +1,107 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net48",
+    "targetDisplayName": ".NETFramework,Version=v4.8"
+  },
+  "analysisStartTime": "2026-11-05T20:38:55.9553352Z",
+  "analysisEndTime": "2026-11-05T20:38:57.4257144Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 1,
+      "incidents": 1,
+      "effort": 1
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 1,
+        "Optional": 0,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "Milk.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "Milk",
+        "projectKind": "WinForms",
+        "frameworks": [
+          "net10.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "isTestProject": false,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 6118,
+        "linesOfCode": 319,
+        "totalApiScanned": 434,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "5f14cb13-6d22-47f9-921b-2eb0ad1f3d24",
+          "ruleId": "Project.0002",
+          "projectPath": "Milk.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net10.0-windows\nRecommended target framework: net48-windows",
+              "protected": "Current target framework: net10.0-windows\nRecommended target framework: net48-windows"
+            },
+            "kind": "File",
+            "path": "Milk.csproj",
+            "snippet": "Current target framework: net10.0-windows\nRecommended target framework: net48-windows",
+            "protectedSnippet": "Current target framework: net10.0-windows\nRecommended target framework: net48-windows",
+            "properties": {
+              "CurrentTargetFramework": "net10.0-windows",
+              "RecommendedTargetFramework": "net48-windows"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Visual Studio and user-specific files
+.vs/
+**/*.user
+
+# Build outputs and intermediate files
+**/bin/
+**/obj/
+
+# WebView2 runtime data
+**/*.exe.WebView2/
+
+# Temporary project backups
+*.tmp
